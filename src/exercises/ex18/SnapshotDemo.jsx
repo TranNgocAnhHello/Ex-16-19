@@ -6,7 +6,7 @@ function SnapshotDemo() {
   const [snapshot, setSnapshot] = useState(null)
 
   const handleIncrement = () => {
-    setCount((current) => current + 1)
+    setCount(count + 1)
   }
 
   const handleSnapshot = () => {
@@ -20,30 +20,20 @@ function SnapshotDemo() {
   }
 
   return (
-    <article className="exercise-card">
-      <div className="exercise-card__header">
-        <p className="exercise-card__tag">Exercise 18</p>
-        <h2>Demo about State as a Snapshot</h2>
-      </div>
-
-      <div className="exercise-card__content">
-        <div className="snapshot-demo">
-          <h3 className="snapshot-demo__title">State as a Snapshot Demo</h3>
-          <p className="snapshot-demo__count">Count: {count}</p>
-          <div className="snapshot-demo__buttons">
-            <button type="button" onClick={handleIncrement}>
-              Increment
-            </button>
-            <button type="button" onClick={handleSnapshot}>
-              Take Snapshot
-            </button>
-            <button type="button" onClick={handleRestore}>
-              Restore Snapshot
-            </button>
-          </div>
-        </div>
-      </div>
-    </article>
+    <div className="snapshot-demo">
+      <p className="snapshot-demo__tag">Exercise 18</p>
+      <h1>State as a Snapshot Demo</h1>
+      <p>Count: {count}</p>
+      <button type="button" onClick={handleIncrement}>
+        Increment
+      </button>
+      <button type="button" onClick={handleSnapshot}>
+        Take Snapshot
+      </button>
+      <button type="button" onClick={handleRestore}>
+        Restore Snapshot
+      </button>
+    </div>
   )
 }
 

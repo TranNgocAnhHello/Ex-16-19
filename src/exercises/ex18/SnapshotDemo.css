@@ -1,31 +1,27 @@
 @import '../shared/exerciseCard.css';
 
 .snapshot-demo {
-  padding: 22px;
-  border-radius: 16px;
-  border: 1px solid #d7e3c5;
-  background: linear-gradient(135deg, #f0fdf4, #fff);
+  display: grid;
+  gap: 12px;
 }
 
-.snapshot-demo__title {
-  margin: 0 0 10px;
-  font-size: 2rem;
-  color: #1f2937;
+.snapshot-demo__tag {
+  margin: 0;
+  color: #f97316;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  font-size: 0.8rem;
 }
 
-.snapshot-demo__count {
-  margin: 0 0 14px;
+.snapshot-demo h1,
+.snapshot-demo p {
+  margin: 0;
 }
 
-.snapshot-demo__buttons {
-  display: flex;
-  gap: 8px;
-  flex-wrap: wrap;
-}
-
-.snapshot-demo__buttons button {
-  border: 1px solid #1f2937;
+.snapshot-demo button {
   background: #fff;
   padding: 8px 12px;
+  border: 1px solid #1f2937;
   cursor: pointer;
 }

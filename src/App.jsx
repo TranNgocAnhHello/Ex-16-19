@@ -8,7 +8,6 @@ function App() {
   return (
     <main className="homework">
       <header className="homework__hero">
-        <p className="homework__eyebrow">FPT University</p>
         <h1>Exercises 16 - 19</h1>
       </header>
 

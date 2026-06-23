@@ -1,29 +1,25 @@
 .animal-card {
   width: 100%;
-  border-radius: 8px;
   overflow: hidden;
   background: #f8c000;
   box-shadow: 0 10px 26px rgba(0, 0, 0, 0.12);
-}
-
-.animal-card__image {
-  height: 220px;
-  background: #e5e7eb;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 14px;
+  border-radius: 8px;
 }
 
 .animal-card__photo {
   width: 100%;
-  height: 100%;
+  height: 220px;
   display: block;
   object-fit: cover;
   object-position: center;
+  background: #e5e7eb;
 }
 
-.animal-card__body {
-  padding: 12px 14px 14px;
-}
-
-.animal-card__name {
+.animal-card h3 {
+  padding: 12px 14px 0;
   margin: 0 0 10px;
   font-size: 1.6rem;
   color: #ef4444;

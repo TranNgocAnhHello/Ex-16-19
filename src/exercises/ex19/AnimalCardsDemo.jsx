@@ -3,8 +3,12 @@ import AnimalCard from './AnimalCard'
 import animalData from './animalData'
 
 function AnimalCardsDemo() {
-  const handleMoreInfo = ({ notes, link }) => {
-    alert(`notes: ${notes}\nlink: ${link}`)
+  const showAdditionalData = (additional) => {
+    const message = Object.entries(additional)
+      .map(([key, value]) => `${key}: ${value}`)
+      .join('\n')
+
+    alert(message)
   }
 
   return (
@@ -24,7 +28,8 @@ function AnimalCardsDemo() {
               size={animal.size}
               diet={animal.diet}
               image={animal.image}
-              onMoreInfo={() => handleMoreInfo(animal.additional)}
+              additional={animal.additional}
+              showAdditional={showAdditionalData}
             />
           ))}
         </div>
