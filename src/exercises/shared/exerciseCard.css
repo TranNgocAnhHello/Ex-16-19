@@ -1,0 +1,50 @@
+.exercise-card {
+  background: #fffdf8;
+  border: 1px solid #eadfca;
+  border-radius: 20px;
+  padding: 24px;
+  box-shadow: 0 12px 36px rgba(17, 24, 39, 0.06);
+}
+
+.exercise-card__header {
+  border-bottom: 1px solid #e7e1d3;
+  padding-bottom: 14px;
+  margin-bottom: 18px;
+}
+
+.exercise-card__tag {
+  margin: 0 0 6px;
+  color: #f97316;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  font-size: 0.8rem;
+}
+
+.exercise-card__header h2 {
+  margin: 0;
+  font-size: 1.85rem;
+  color: #1f2937;
+}
+
+.exercise-card__content {
+  display: grid;
+  gap: 16px;
+}
+
+.exercise-card__lead {
+  color: #374151;
+  margin: 0;
+}
+
+.exercise-card__code {
+  margin: 0;
+  padding: 18px;
+  border-radius: 16px;
+  background: #111827;
+  color: #f9fafb;
+  overflow: auto;
+  font-family: 'Consolas', 'Courier New', monospace;
+  font-size: 0.92rem;
+  line-height: 1.6;
+}

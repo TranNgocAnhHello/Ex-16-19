@@ -1,0 +1,17 @@
+@import '../shared/exerciseCard.css';
+
+.animal-demo .exercise-card__content {
+  gap: 20px;
+}
+
+.animal-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+}
+
+@media (max-width: 900px) {
+  .animal-grid {
+    grid-template-columns: 1fr;
+  }
+}
